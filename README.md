@@ -73,6 +73,47 @@ GROUP BY students.city;
 
 ---
 
+[9:15 pm, 05/04/2026] ..: Best Performing City
+
+SELECT students.city, AVG(marks.marks) AS avg_marks
+FROM students
+JOIN marks ON students.id = marks.id
+GROUP BY students.city
+ORDER BY avg_marks DESC
+LIMIT 1;
+
+---
+
+Insights
+
+- The top-performing student has the highest average marks
+- Certain cities show better overall academic performance
+- Students with average marks above 80 can be considered high performers
+
+---
+
+Conclusion
+
+This project demonstrates how SQL can be used to analyze structured data and generate useful insights.
+
+---
+
+Sample Output
+
+Top Performing Student:
+Name: Rahul Sharma
+Average Marks: 88.5
+
+Best Performing City:
+City: Delhi
+Average Marks: 84.2
+
+Students with Average Marks > 80:
+Rahul Sharma
+Priya Singh
+Amit Verma
+
+---
 Best Performing City
 
 SELECT students.city, AVG(marks.marks) AS avg_marks
