@@ -73,7 +73,7 @@ GROUP BY students.city;
 
 ---
 
-[9:15 pm, 05/04/2026] ..: Best Performing City
+Best Performing City
 
 SELECT students.city, AVG(marks.marks) AS avg_marks
 FROM students
